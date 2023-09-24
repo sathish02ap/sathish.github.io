@@ -106,7 +106,7 @@ ul {
 /* Style the image */
 .image {
   text-align: right;
-  flex: 1;
+  flex: -1;
 }
 
 .image img {
