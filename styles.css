@@ -3,6 +3,9 @@ body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /* Set a background color for the entire page */
 body {
