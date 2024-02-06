@@ -4,89 +4,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sathish G</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Add links for Font Awesome icons -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.1/css/all.min.css">
+    <!-- Tailwind CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional Custom Styles */
+        body {
+            font-family: Arial, sans-serif;
+            
+        }
+
+        .full-height {
+            height: 100vh; /* 100% of the viewport height */
+        }
+
+        header {
+            background-color: #634d53;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .nav-list a {
+            color: white;
+            font-size: 20px; /* Increased font size */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-list a:hover {
+            color: #2c3e50;
+        }
+
+        .home {
+            background-color: #e0e0e0;
+            color: #34495e;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content {
+            text-align: left;
+            flex: 1;
+        }
+
+        .name {
+            font-size: 75px; /* Increased font size to 100px */
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #404d5f;
+        }
+
+
+        .status {
+            font-size: 2rem; /* Increased font size */
+        }
+
+        .image {
+            text-align: right;
+            flex: -1;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px; /* Optional: Add border-radius for a rounded image */
+        }
+
+        #about,
+        #education,
+        #skills,
+        #projects {
+            background-color: #d5afb5;
+            color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 2rem;
+        }
+
+        #about h2,
+        #education h2,
+        #skills h2,
+        #projects h2,
+        #contact h2 {
+            font-size: 3rem; /* Increased font size */
+        }
+
+        footer {
+            background-color: #634d53;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            font-size: 1.8rem; /* Increased font size */
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #3498db;
+        }S
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="py-4">
+        <nav class="container mx-auto">
+            <ul class="nav-list flex justify-end gap-6">
+                <li class="text-lg"><a href="#home">Home</a></li>
+                <li class="text-lg"><a href="#about">About</a></li>
+                <li class="text-lg"><a href="#education">Education</a></li>
+                <li class="text-lg"><a href="#skills">Skills</a></li>
+                <li class="text-lg"><a href="#projects">Projects</a></li>
+                <li class="text-lg"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div id="home" class="home">
-        <div class="content">
-            <p class="name"><span class="reveal-text">Hello, I'm Sathish</span></p>
-            <p class="status">Graduate</p>
+    <div id="home" class="home container mx-auto py-12 flex items-center full-height">
+        <div class="content text-left pr-8">
+            <p class="name text-4xl font-bold mb-4">
+                <span class="reveal-text">Hello, I'm Sathish</span>
+            </p>
+            <p class="status text-xl">Graduate</p>
         </div>
         <div class="image">
-            <img src="https://github.com/sathish02ap/sathish.github.io/blob/main/sathishg.jpeg?raw=true" alt="Sathish's image">
+            <img src="C:\Users\sathi\Desktop\mywebsite\sathishg.jpeg" alt="Sathish's image" class="rounded-full max-w-64">
         </div>
     </div>
-        <div id="about">
-            <h2>About</h2>
-            <p>B.TECH GRADUATE WITH 88.7% AGGREGATE</p>
-            <p>An enthusiastic fresher with a highly motivated Bachelor of Technology degree in Electronics and Communication Engineering. Eager to learn new technologies and methodologies. Seeking a position to utilize my skills and abilities to start up my career that offers professional growth while being resourceful, innovative, and flexible & by working in a challenging position where I will have opportunities to utilize my experience in projects.</p>
+    <div id="about" class="container mx-auto bg-blue-500 text-white p-6 mb-8">
+        <h2 class="text-2xl font-bold mb-4">About</h2>
+        <p>B.TECH GRADUATE WITH 87.2% AGGREGATE</p>
+        <p>An enthusiastic fresher with a highly motivated Bachelor of Technology degree in Electronics and Communication Engineering. Eager to learn new technologies and methodologies. Seeking a position to utilize my skills and abilities to start up my career that offers professional growth while being resourceful, innovative, and flexible & by working in a challenging position where I will have opportunities to utilize my experience in projects.</p>
+    </div>
+    <div id="education"  class="container mx-auto bg-blue-500 text-white p-6 mb-8">
+        <h2 class="text-2xl font-bold mb-4">Education</h2>
+        <!-- ... (Rest of your education content) ... -->
+        <div>
+        <h3><u>Graduation</u></h3>
+        <p>Bachelor of Technology (B-Tech)</p>
+        <p>Electronics and Communication Engineering (ECE)</p>
+        <p>CGPA: 8.72</p>
+        <p>College: Madanapalle Institute of Technology and Science, Madanapalle</p>
+        <br>
         </div>
-        <div id="education">
-            <h2>Education</h2>
-            <h3>Graduation</h3>
-            <p>Bachelor of Technology (B-Tech)</p>
-            <p>Electronics and Communication Engineering (ECE)</p>
-            <p>CGPA: 8.87</p>
-            <p>College: Madanapalle Institute of Technology and Science, Madanapalle</p>
-            
-            <h3>Intermediate</h3>
-            <p>MPC</p>
-            <p>CGPA: 9.91</p>
-            <p>College: Mother Teresa Junior College, Palamaner</p>
-            
-            <h3>SSC</h3>
-            <p>CGPA: 10</p>
-            <p>School: Ravindra Bharathi School, Palamaner</p>
-        </div>
-        <div id="skills">
-            <h2>Skills</h2>
+        <div>
+        <h3><u>Intermediate</u></h3>
+        <p>MPC</p>
+        <p>CGPA: 9.91</p>
+        <p>College: Mother Teresa Junior College, Palamaner</p>
+        <br>
+
+    </div>
+    <div></div>
+        <h3><u>SSC</u></h3>
+        <p>CGPA: 10</p>
+        <p>School: Ravindra Bharathi School, Palamaner</p>
+    </div>
+    <div id="skills"  class="container mx-auto bg-blue-500 text-white p-6 mb-8">
+        <h2 class="text-2xl font-bold mb-4">Skills</h2>
+        <!-- ... (Rest of your skills content) ... -->
             <p>Python Programming</p>
             <p>SQL</p>
             <p>HTML</p>
             <p>CSS</p>
-            <p>Javascript</p>
             <p>MS Office</p>
-        </div>
-        <div id="projects">
-            <h2>Projects</h2>
-            <h4>Design of Non-Volatile Full Adder using MTJ (Magnetic Tunnel Junction)</h4>
+    </div>
+    <div id="projects"  class="container mx-auto bg-blue-500 text-white p-6 mb-8">
+        <h2 class="text-2xl font-bold mb-4">Projects</h2>
+        <!-- ... (Rest of your projects content) ... -->
+        <h4>Design of Non-Volatile Full Adder using MTJ (Magnetic Tunnel Junction)</h4>
             <p>Team Size: 3</p>
             <p>Role: Team Lead and circuit execution</p>
-        </div>
-    </header>
-    <footer>
-        <div id="contact">
-            <h2>Contact</h2>
-            <a href="https://www.facebook.com/g.sathish.3785/" target="_blank">
+    </div>
+    <footer class="py-4">
+        <div id="contact" class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4 text-white">Contact</h2>
+            <a href="https://www.facebook.com/g.sathish.3785/" target="_blank" class="social-link">
                 <i class="fab fa-facebook"></i> Facebook
             </a>
-            <a href="https://instagram.com/sathish_gangarapu?igshid=MzMyNGUyNmU2YQ==" target="_blank">
+            <a href="https://instagram.com/sathish_gangarapu?igshid=MzMyNGUyNmU2YQ==" target="_blank" class="social-link">
                 <i class="fab fa-instagram"></i> Instagram
             </a>
-            <a href="tel:8688561363">
+            <a href="tel:8688561363" class="social-link">
                 <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
-            <a href="https://www.linkedin.com/in/sathish-g-a715021a9" target="_blank">
+            <a href="https://www.linkedin.com/in/sathish-g-a715021a9" target="_blank" class="social-link">
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
-            <a href="mailto:sathishgraja@email.com">
+            <a href="mailto:sathishgraja@email.com" class="social-link">
                 <i class="far fa-envelope"></i> Email
             </a>
         </div>
     </footer>
+    <!-- Bootstrap JS and Popper.js (Required for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
