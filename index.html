@@ -1,213 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sathish G</title>
-    <style>
-        /* Custom Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #634d53;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .nav-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: flex-end;
-            gap: 20px;
-        }
-
-        .nav-list a {
-            color: white;
-            font-size: 20px;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .nav-list a:hover {
-            color: #2c3e50;
-        }
-
-        .home {
-            background-color: #e0e0e0;
-            color: #34495e;
-            padding: 50px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-			height:600px;
-			margin-left: 100px;
-			margin-right: 100px;
-        }
-
-        .content {
-            text-align: left;
-            flex: 1;
-            padding-right: 20px;
-        }
-
-        .name {
-            font-size: 75px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #404d5f;
-        }
-
-        .status {
-            font-size: 2rem;
-        }
-
-        .image img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 8px;
-        }
-
-        #about,
-        #education,
-        #skills,
-        #projects {
-            background-color: #d5afb5;
-            color: #fff;
-            padding: 20px;
-            margin: 20px 0;
-            font-size: 2rem;
-			margin-left: 100px;
-			margin-right: 100px;
-        }
-        #education,
-        #skills,
-        #projects{
-            line-height: 70%;
-        }
-
-        h2 {
-            font-size: 3rem;
-            margin-top: 0;
-        }
-
-        footer {
-            background-color: #634d53;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        footer a {
-            color: white;
-            font-size: 1.8rem;
-            text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #3498db;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="G Sathish - Server Certification Engineer portfolio showcasing automation projects and technical expertise" />
+  <title>G Sathish | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="py-4">
-        <nav class="container mx-auto">
-            <ul class="nav-list">
-                <li class="text-lg"><a href="#home">Home</a></li>
-                <li class="text-lg"><a href="#about">About</a></li>
-                <li class="text-lg"><a href="#education">Education</a></li>
-                <li class="text-lg"><a href="#skills">Skills</a></li>
-                <li class="text-lg"><a href="#projects">Projects</a></li>
-                <li class="text-lg"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="home" class="home container mx-auto py-12 flex items-center">
-        <div class="content text-left">
-            <p class="name text-4xl font-bold mb-4">
-                <span class="reveal-text">Hello, I'm Sathish</span>
-            </p>
-            <p class="status text-xl">Graduate</p>
-        </div>
-        <div class="image">
-            <img src="https://github.com/sathish02ap/sathish.github.io/blob/main/image.jpeg?raw=true" alt="Sathish's image" class="rounded-full max-w-64">
-        </div>
-    </div>
-    <div id="about" class="container mx-auto bg-blue-500 text-white p-6 mb-8">
-        <h2 class="text-2xl font-bold mb-4">About</h2>
-        <p>B.TECH GRADUATE WITH 87.2% AGGREGATE</p>
-        <p>An enthusiastic fresher with a highly motivated Bachelor of Technology degree in Electronics and Communication Engineering. Eager to learn new technologies and methodologies. Seeking a position to utilize my skills and abilities to start up my career that offers professional growth while being resourceful, innovative, and flexible & by working in a challenging position where I will have opportunities to utilize my experience in projects.</p>
-    </div>
-    <div id="education"  class="container mx-auto bg-blue-500 text-white p-6 mb-8">
-        <h2 class="text-2xl font-bold mb-4">Education</h2>
-        <!-- ... (Rest of your education content) ... -->
-        <div>
-        <h3><u>Graduation</u></h3>
-        <p>Bachelor of Technology (B-Tech)</p>
-        <p>Electronics and Communication Engineering (ECE)</p>
-        <p>CGPA: 8.72</p>
-        <p>College: Madanapalle Institute of Technology and Science, Madanapalle</p>
-        <br>
-        </div>
-        <div>
-        <h3><u>Intermediate</u></h3>
-        <p>MPC</p>
-        <p>CGPA: 9.91</p>
-        <p>College: Mother Teresa Junior College, Palamaner</p>
-        <br>
-        </div>
-        <div>
-        <h3><u>SSC</u></h3>
-        <p>CGPA: 10</p>
-        <p>School: Ravindra Bharathi School, Palamaner</p>
-        </div>
-    </div>
-    <div id="skills"  class="container mx-auto bg-blue-500 text-white p-6 mb-8">
-        <h2 class="text-2xl font-bold mb-4">Skills</h2>
-        <!-- ... (Rest of your skills content) ... -->
-        <p>Python Programming</p>
-        <p>SQL</p>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>MS Office</p>
-    </div>
-    <div id="projects"  class="container mx-auto bg-blue-500 text-white p-6 mb-8">
-        <h2 class="text-2xl font-bold mb-4">Projects</h2>
-        <!-- ... (Rest of your projects content) ... -->
-        <h4>Design of Non-Volatile Full Adder using MTJ (Magnetic Tunnel Junction)</h4>
-        <p>Team Size: 3</p>
-		<p>Role: Team Lead and circuit execution</p>
-    </div>
-    <footer class="py-4">
-        <div id="contact" class="container mx-auto">
-            <h2 class="text-2xl font-bold mb-4 text-white">Contact</h2>
-            <a href="https://www.facebook.com/g.sathish.3785/" target="_blank" class="social-link">
-                <i class="fab fa-facebook"></i> Facebook
+  <header class="navbar">
+    <div class="logo">GSathish</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm G Sathish</h1>
+          <p>
+            Server Certification Engineer at LTIMindtree, building Python and Ansible
+            automation to make Windows &amp; Linux server validation fast and reliable.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn secondary"
+               href="C:\Users\Sathish G\Downloads\G_Sathish_Resume.pdf"
+               download="G_Sathish_Resume.pdf">
+              Download Resume
             </a>
-            <a href="https://instagram.com/sathish_gangarapu?igshid=MzMyNGUyNmU2YQ==" target="_blank" class="social-link">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="tel:8688561363" class="social-link">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <a href="https://www.linkedin.com/in/sathish-g-a715021a9" target="_blank" class="social-link">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="mailto:sathishgraja@email.com" class="social-link">
-                <i class="far fa-envelope"></i> Email
-            </a>
+          </div>
         </div>
-    </footer>
+
+        <div class="hero-dp">
+          <img src="C:\Users\Sathish G\OneDrive\Pictures\Sathish(photo).jpg" alt="G Sathish profile photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I specialize in end‑to‑end OS certification for enterprise servers, from BIOS
+        updates and HLK runs to log analysis and report generation.
+        Over the last few years, I've moved from manual test execution to designing
+        automation that saves hours per run and reduces human error.
+      </p>
+      <p>
+        My current focus is streamlining Windows and Linux certification workflows,
+        integrating lab tools, and exposing repeatable flows through scripts and
+        simple web dashboards so teams can ship hardware with confidence.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span>Python (automation)</span>
+        <span>Ansible for Windows &amp; Linux</span>
+        <span>Windows Server</span>
+        <span>Linux (RHEL / Ubuntu)</span>
+        <span>HLK / HCK</span>
+        <span>BIOS &amp; firmware updates</span>
+        <span>PowerShell</span>
+        <span>Git &amp; GitHub</span>
+        <span>REST APIs</span>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+
+      <article class="card">
+        <h3>Server Certification Engineer – LTIMindtree</h3>
+        <p class="muted">2021 – Present · Gurugram, India</p>
+        <ul>
+          <li>Own end‑to‑end Windows &amp; Linux server certification, from BIOS updates and HLK runs to reporting.</li>
+          <li>Build Python and Ansible automation to schedule HLK suites, parse logs, and generate summary reports.</li>
+          <li>Collaborate with hardware, QA, and infra teams to keep lab environments consistent across platforms.</li>
+          <li>Reduced manual test setup time by 60% through custom automation toolkits.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p>
+        Here are a few focused projects that show how I use automation and scripting
+        to improve server certification workflows.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <h3>HLK Test Automation Toolkit</h3>
+          <p>
+            Python and PowerShell toolkit that triggers HLK suites on lab servers,
+            monitors execution, and aggregates pass/fail logs into a single HTML
+            summary report.
+          </p>
+          <ul class="meta">
+            <li><strong>Stack:</strong> Python, PowerShell, HLK, Git</li>
+            <li><strong>Impact:</strong> Cut manual test setup time by ~60%.</li>
+          </ul>
+          <a href="https://github.com/your-username/hlk-automation-toolkit" target="_blank" rel="noreferrer">
+            View Source on GitHub
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Server Lab Inventory Dashboard</h3>
+          <p>
+            Lightweight web app to track lab servers, BIOS/firmware versions,
+            OS images, and certification status, with filters by platform and
+            test cycle.
+          </p>
+          <ul class="meta">
+            <li><strong>Stack:</strong> Python (FastAPI/Flask), SQLite, HTML/CSS</li>
+            <li><strong>Impact:</strong> Gave team a single view of lab readiness.</li>
+          </ul>
+          <a href="https://github.com/your-username/server-lab-inventory" target="_blank" rel="noreferrer">
+            View Source on GitHub
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Provisioning Playbooks for Lab</h3>
+          <p>
+            Ansible playbooks to provision Windows and Linux hosts with required
+            drivers, tools, and user accounts before certification cycles.
+          </p>
+          <ul class="meta">
+            <li><strong>Stack:</strong> Ansible, Windows Server, Linux</li>
+            <li><strong>Impact:</strong> Standardized lab setup across platforms.</li>
+          </ul>
+          <a href="https://github.com/your-username/lab-provisioning-playbooks" target="_blank" rel="noreferrer">
+            View Source on GitHub
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact & Feedback -->
+    <section id="contact" class="section">
+      <h2>Contact &amp; Feedback</h2>
+      <p>
+        Have feedback, a collaboration idea, or a role that fits my profile? Use the form below
+        or reach me directly via the contact options.
+      </p>
+
+      <!-- Feedback / contact form -->
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message / Feedback</label>
+          <textarea id="message" name="message" rows="4"
+                    placeholder="Tell me about your project, feedback, or opportunity" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <!-- Direct contact details - Icons only -->
+      <div class="contact-details">
+        <div class="contact-grid">
+          <a href="tel:+918688561363" class="contact-item" title="Call Me" target="_blank">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+          </a>
+
+          <a href="mailto:sathishgraja01@gmail.com" class="contact-item" title="Email" target="_blank">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/gsathish" class="contact-item" title="LinkedIn" target="_blank" rel="noreferrer">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+          </a>
+
+          <a href="https://github.com/gsathish" class="contact-item" title="GitHub" target="_blank" rel="noreferrer">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+          </a>
+
+          <a href="https://wa.me/918688561363?text=Hi%20Sathish%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." class="contact-item" title="WhatsApp" target="_blank" rel="noreferrer">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© 2025 G Sathish. All rights reserved.</small>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
